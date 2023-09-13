@@ -12,8 +12,8 @@ body {
 }
 #minicircle{
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
-  width: 7px;
-  height: 7px;
+  width: 12px;
+  height: 12px;
   background-color: #fff;
   z-index: 9999;
   border-radius: 50%;
@@ -163,11 +163,13 @@ body {
 }
 
 .elem img {
-  display: none;
-  /* opacity: 0; */
+  /* display: none; */
+  opacity: 0;
+  pointer-events: none;
   height: 150%;
   position: absolute;
   z-index: 999;
+  transform: translate(-50%, -50%);
 }
 
 #about{
